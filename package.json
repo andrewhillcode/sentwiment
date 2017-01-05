@@ -1,0 +1,25 @@
+{
+  "name": "twitterrepo",
+  "version": "1.0.0",
+  "main": "app.js",
+  "dependencies": {
+    "d3-cloud": "^1.2.1",
+    "d3.layout.cloud": "^1.2.0",
+    "sentiment": "^2.1.0",
+    "express": "^4.14.0",
+    "socket.io": "^1.5.1",
+    "twitter": "^1.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://andrewhillcode@bitbucket.org/andrewhillcode/cab432-cloud-computing-assignment-2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/andrewhillcode/cab432-cloud-computing-assignment-2#readme",
+  "description": ""
+}

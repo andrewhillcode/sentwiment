@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"lang="en">
+<head>
+	<title>Twitter Consensus</title>
+	<meta charset="UTF-8">
+	<!-- Socket.io client side JS -->
+	<script src="/socket.io/socket.io.js"></script>
+	<!-- Chart.js JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.js"></script>
+	<!-- Boostrap JS and CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="/style.css">
+</head>
+<body> 
+	<div class="banner">
+		<img src="/logo.png">
+	</div>
+	<div class="container">
+		<h3>Currently Tracking<br><span id='tracking'></span></h3>
+		<div class="changeKeywords">
+			<input id='change-keyword'></input><button id='keyword-btn' class="btn-primary btn" onclick="changeKeywords();">Change keywords</button>
+		</div>
+
+		<div class="col-md-6">
+			<canvas id='chart'></canvas>
+			<br>
+			<span id="chartPos">0 positive tweets (0%)</span>
+			<br>
+			<span id="chartNeg">0 negative tweets (0%)</span>
+			<br>
+			<span id="chartNeu">0 neutral tweets (0%)</span>
+			<br>
+		</div>
+		<div class="col-md-6">
+			<canvas id='scoreChart'></canvas>
+			<br>
+			<span id="scoreChartPos">Positive Points: 0 (0%)</span>
+			<br>
+			<span id="scoreChartNeg">Negative Points: 0 (0%)</span>
+			<br>
+		</div>
+		<div class="col-md-12 result" id="resultbox">
+			<span id="resultText">Please enter a keyword to start tracking.</span>
+		</div>
+	</div>
+
+</body>
+<!-- Initialize custom scripts after page is loaded -->
+<script src="/scripts.js"></script>
+</html>

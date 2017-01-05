@@ -1,0 +1,55 @@
+.chart-container{
+	width: 40%;
+	display: inline-block;
+}
+
+body {
+	background-color: #f9f9f9;
+}
+
+.container{
+	background-color: white;
+}
+
+.banner {
+	height: 200px;
+	background-color: #45b9fd;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 200px;
+	border-bottom: 1px solid #2587c0;
+}
+
+.banner img {
+	padding-top: 40px;
+}
+
+.container {
+
+}
+
+h3 {
+	text-align: center;
+}
+
+#tracking {
+	color: #45b9fd;
+}
+
+.changeKeywords {
+	text-align: center;
+}
+
+.changeKeywords input {
+	margin-right: 10px;
+}
+
+.result {
+	font-size: 20px;
+	text-align: center;
+	margin-top: 10px;
+	height: 100px;
+	vertical-align: middle;
+	line-height: 100px;
+	width: 100%;
+}
